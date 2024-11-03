@@ -153,10 +153,10 @@ $("#send_message").on("click", function(event) {
         $this.find(':submit').attr('disabled', 'true');
 
         // Create the email content in the desired format
-        var emailBody = `Reg Service Required: ${contact_subject}\n\n  ${contact_message}\n\nName: ${contact_name}\nPhone Number: ${contact_phone}\nEmail ID: ${contact_email}`;
+        var emailBody = `${contact_message}\n\nName: ${contact_name}\nPhone Number: ${contact_phone}\nEmail ID: ${contact_email}`;
 
         // Create a mailto link with the email body
-        window.location.href = `mailto:r.kavinkumar.dev@gmail.com?subject=${encodeURIComponent(contact_subject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = `mailto:r.kavinkumar.dev@gmail.com?subject=Reg Service required: ${encodeURIComponent(contact_subject)}&body=${encodeURIComponent(emailBody)}`;
         
         // Reset the form
         $this[0].reset();

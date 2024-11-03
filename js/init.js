@@ -1,34 +1,27 @@
-/*
- * Copyright (c) 2024 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
 
 jQuery(document).ready(function(){
 
 	"use strict";
 	
-	// here all ready functions
-	
-	arlo_tm_modalbox();
-	arlo_tm_trigger_menu();
+	kavin_modalbox();
+	kavin_trigger_menu();
 	progress_function();
-	arlo_tm_modalbox_news();
-	arlo_tm_modalbox_portfolio();
-	arlo_tm_imgtosvg();
-	arlo_tm_popup();
-	arlo_tm_data_images();
-	arlo_tm_page_transition();
-	arlo_tm_projects();
-	arlo_tm_portfolio();
-	arlo_tm_owl_carousel();
-	arlo_tm_section_top();
-	arlo_tm_background_effects();
-	arlo_tm_borders();
-	arlo_tm_canvas_effect();
+	kavin_modalbox_news();
+	kavin_modalbox_portfolio();
+	kavin_imgtosvg();
+	kavin_popup();
+	kavin_data_images();
+	kavin_page_transition();
+	kavin_projects();
+	kavin_portfolio();
+	kavin_owl_carousel();
+	kavin_section_top();
+	kavin_background_effects();
+	kavin_borders();
+	kavin_canvas_effect();
 	
 	jQuery(window).load('body', function(){
-		arlo_tm_my_load();
+		kavin_my_load();
 	});
 	
 });
@@ -37,10 +30,10 @@ jQuery(document).ready(function(){
 // --------------------   MODALBOX    ------------------
 // -----------------------------------------------------
 
-function arlo_tm_modalbox(){
+function kavin_modalbox(){
 	"use strict";
 	
-	jQuery('.arlo_tm_all_wrap').prepend('<div class="arlo_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
+	jQuery('.kavin_all_wrap').prepend('<div class="kavin_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
 }
 
 // -------------------------------------------------
@@ -102,13 +95,13 @@ function progress_function(wrapper){
 // ---------------   TRIGGER MENU    -------------------
 // -----------------------------------------------------
 
-function arlo_tm_trigger_menu(){
+function kavin_trigger_menu(){
 	
 	"use strict";
 
-	var hamburger 		= jQuery('.arlo_tm_topbar .trigger .hamburger');
-	var mobileMenu		= jQuery('.arlo_tm_mobile_menu');
-	var mobileMenuList	= jQuery('.arlo_tm_mobile_menu ul li a');
+	var hamburger 		= jQuery('.kavin_topbar .trigger .hamburger');
+	var mobileMenu		= jQuery('.kavin_mobile_menu');
+	var mobileMenuList	= jQuery('.kavin_mobile_menu ul li a');
 
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -124,7 +117,7 @@ function arlo_tm_trigger_menu(){
 	});
 	
 	mobileMenuList.on('click',function(){
-		jQuery('.arlo_tm_topbar .trigger .hamburger').removeClass('is-active');
+		jQuery('.kavin_topbar .trigger .hamburger').removeClass('is-active');
 		mobileMenu.removeClass('opened');
 		return false;
 	});
@@ -134,11 +127,11 @@ function arlo_tm_trigger_menu(){
 // -------------  MODALBOX NEWS  -------------------
 // -------------------------------------------------
 
-function arlo_tm_modalbox_news() {
+function kavin_modalbox_news() {
     "use strict";
 
     // Select the image button within each news item
-    var imageButton = jQuery('.arlo_tm_news .news_list .image');
+    var imageButton = jQuery('.kavin_news .news_list .image');
 
     // Event for clicking the image
     imageButton.on('click', function() {
@@ -162,12 +155,12 @@ function arlo_tm_modalbox_news() {
 // -------------------------------------------------
 
 
-function arlo_tm_modalbox_portfolio(){
+function kavin_modalbox_portfolio(){
 	
 	"use strict";
 	
-	var modalBox	= jQuery('.arlo_tm_modalbox');
-	var button		= jQuery('.arlo_tm_portfolio .portfolio_popup');
+	var modalBox	= jQuery('.kavin_modalbox');
+	var button		= jQuery('.kavin_portfolio .portfolio_popup');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
@@ -182,7 +175,7 @@ function arlo_tm_modalbox_portfolio(){
 		modalBox.find('.description_wrap').html(details);
 		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3 class="title">'+title+'</h3><span class="category"><a href="#">'+category+'</a></span></div>');	
-		arlo_tm_data_images();
+		kavin_data_images();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -195,7 +188,7 @@ function arlo_tm_modalbox_portfolio(){
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-function arlo_tm_preloader(){
+function kavin_preloader(){
 	
 	"use strict";
 	
@@ -219,20 +212,20 @@ function arlo_tm_preloader(){
 // -----------------   MY LOAD    ----------------------
 // -----------------------------------------------------
 
-function arlo_tm_my_load(){
+function kavin_my_load(){
 	
 	"use strict";
 	
 	var speed	= 500;
-	setTimeout(function(){arlo_tm_preloader();},speed);
-	setTimeout(function(){jQuery('.arlo_tm_all_wrap').addClass('ready');},speed+2000);
+	setTimeout(function(){kavin_preloader();},speed);
+	setTimeout(function(){jQuery('.kavin_all_wrap').addClass('ready');},speed+2000);
 }
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function arlo_tm_imgtosvg(){
+function kavin_imgtosvg(){
 	
 	"use strict";
 	
@@ -266,7 +259,7 @@ function arlo_tm_imgtosvg(){
 // --------------------   POPUP    ---------------------
 // -----------------------------------------------------
 
-function arlo_tm_popup(){
+function kavin_popup(){
 	
 	"use strict";
 
@@ -305,7 +298,7 @@ function arlo_tm_popup(){
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function arlo_tm_data_images(){
+function kavin_data_images(){
 	
 	"use strict";
 	
@@ -334,21 +327,21 @@ function arlo_tm_data_images(){
 // -------------   PAGE TRANSITION    ------------------
 // -----------------------------------------------------
 
-function arlo_tm_page_transition(){
+function kavin_page_transition(){
 	
 	"use strict";
 	
-	var section 		= jQuery('.arlo_tm_section');
+	var section 		= jQuery('.kavin_section');
 	var allLi 			= jQuery('.transition_link li');
 	var button			= jQuery('.transition_link a');
-	var wrapper 		= jQuery('.arlo_tm_all_wrap');
+	var wrapper 		= jQuery('.kavin_all_wrap');
 	var enter	 		= wrapper.data('enter');
 	var exit		 	= wrapper.data('exit');
 	
 	button.on('click',function(){
 		var element 	= jQuery(this);
 		var href		= element.attr('href');
-		if(element.parent().hasClass('arlo_tm_button')){
+		if(element.parent().hasClass('kavin_button')){
 			jQuery('.menu .transition_link a[href="'+href+'"]').trigger('click');
 			return false;
 		}
@@ -375,40 +368,40 @@ function arlo_tm_page_transition(){
 // -----------------    PORTFOLIO    ---------------
 // -------------------------------------------------
 
-function arlo_tm_projects() {
+function kavin_projects() {
 	
 	"use strict";
 	
-	jQuery('.arlo_tm_portfolio_animation_wrap').each(function() {
+	jQuery('.kavin_portfolio_animation_wrap').each(function() {
 		jQuery(this).on('mouseenter', function() {
 			if (jQuery(this).data('title')) {
-				jQuery('.arlo_tm_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
-				jQuery('.arlo_tm_portfolio_titles').addClass('visible');
+				jQuery('.kavin_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
+				jQuery('.kavin_portfolio_titles').addClass('visible');
 			}
 
 			jQuery(document).on('mousemove', function(e) {
-				jQuery('.arlo_tm_portfolio_titles').css({
+				jQuery('.kavin_portfolio_titles').css({
 					left: e.clientX - 10,
 					top: e.clientY + 25
 				});
 			});
 		}).on('mouseleave', function() {
-			jQuery('.arlo_tm_portfolio_titles').removeClass('visible');
+			jQuery('.kavin_portfolio_titles').removeClass('visible');
 		});
 	});
 }
 
 // filterable 
 
-function arlo_tm_portfolio(){
+function kavin_portfolio(){
 
 	"use strict";
 
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var list 		 = jQuery('.arlo_tm_portfolio .portfolio_item');
-		var filter		 = jQuery('.arlo_tm_portfolio .portfolio_filter ul');
+		var list 		 = jQuery('.kavin_portfolio .portfolio_item');
+		var filter		 = jQuery('.kavin_portfolio .portfolio_filter ul');
 
 		if(filter.length){
 			// Isotope Filter 
@@ -439,11 +432,11 @@ function arlo_tm_portfolio(){
 // ----------------    OWL CAROUSEL    -----------------
 // -----------------------------------------------------
 
-function arlo_tm_owl_carousel(){
+function kavin_owl_carousel(){
 
 	"use strict";
 
-	var carousel			= jQuery('.arlo_tm_testimonials .owl-carousel');
+	var carousel			= jQuery('.kavin_testimonials .owl-carousel');
 	carousel.owlCarousel({
 		loop: true,
 		animateOut: 'fadeOut',
@@ -468,14 +461,14 @@ function arlo_tm_owl_carousel(){
 			}
 		}
 	});
-	arlo_tm_imgtosvg();
+	kavin_imgtosvg();
 }
 
-function arlo_tm_section_top(){
+function kavin_section_top(){
 	"use strict";
 	
-	var button	= jQuery('.arlo_tm_sidebar_menu .menu ul li a,.arlo_tm_mobile_menu .menu_list ul li a');
-	var section = jQuery('.arlo_tm_section');
+	var button	= jQuery('.kavin_sidebar_menu .menu ul li a,.kavin_mobile_menu .menu_list ul li a');
+	var section = jQuery('.kavin_section');
 	
 	button.on('click',function(){
 		section.animate({ scrollTop: 0 }, 'slow');
@@ -487,11 +480,11 @@ function arlo_tm_section_top(){
 // -----------    BACKGROUND ANIMATIONS    -------------
 // -----------------------------------------------------
 
-function arlo_tm_background_effects(){
+function kavin_background_effects(){
 	"use strict";
 	
-	var box		= jQuery('.arlo_tm_background_effects');
-	var wrapper	= jQuery('.arlo_tm_background_effects').data('style');
+	var box		= jQuery('.kavin_background_effects');
+	var wrapper	= jQuery('.kavin_background_effects').data('style');
 	
 	if(wrapper === 'canvas'){
 		box.append('<div class="canvas_effects"></div>');
@@ -511,16 +504,16 @@ function arlo_tm_background_effects(){
 // ---------------------    BORDERS    -----------------
 // -----------------------------------------------------
 
-function arlo_tm_borders(){
+function kavin_borders(){
 	"use strict";
-	jQuery('.arlo_tm_mainpart').append('<span class="left_border"></span><span class="right_border"></span><span class="top_border"></span><span class="bottom_border"></span>');
+	jQuery('.kavin_mainpart').append('<span class="left_border"></span><span class="right_border"></span><span class="top_border"></span><span class="bottom_border"></span>');
 }
 
 // -----------------------------------------------------
 // ---------------    BACKGROUND CANVAS    -------------
 // -----------------------------------------------------
 
-function arlo_tm_canvas_effect(){
+function kavin_canvas_effect(){
 	"use strict";
 	
 	if(jQuery('.canvas_effects').length){

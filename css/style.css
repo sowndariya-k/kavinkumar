@@ -1,20 +1,20 @@
 @charset "utf-8";
 /*
-01)	ARLO BASE
-02) ARLO MOBILE MENU
-03) ARLO SIDEBAR MENU
-04) ARLO HOME
-05) ARLO ABOUT
-06) ARLO SERVICES
-07) ARLO PORTFOLIO
-08) ARLO NEWS
-09) ARLO CONTACT
-10) ARLO BACKGROUND EFFECTS
-11) ARLO MEDIA QUERIES (FOR SMALL DEVICES)
+01)	KAVIN BASE
+02) KAVIN MOBILE MENU
+03) KAVIN SIDEBAR MENU
+04) KAVIN HOME
+05) KAVIN ABOUT
+06) KAVIN SERVICES
+07) KAVIN PORTFOLIO
+08) KAVIN NEWS
+09) KAVIN CONTACT
+10) KAVIN BACKGROUND EFFECTS
+11) KAVIN MEDIA QUERIES (FOR SMALL DEVICES)
 
 
 /*---------------------------------------------------*/
-/*	01) ARLO BASE
+/*	01) KAVIN BASE
 /*---------------------------------------------------*/
 
 a{
@@ -96,14 +96,14 @@ h4 { font-size: 24px; }
 h5 { font-size: 20px; }
 h6 { font-size: 16px; }
 
-.arlo_tm_all_wrap{
+.kavin_all_wrap{
 	width: 100%;
 	min-height: 100vh;
 	clear: both;
 	position: relative;
 }
-.arlo_tm_all_wrap,
-.arlo_tm_all_wrap *{
+.kavin_all_wrap,
+.kavin_all_wrap *{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
@@ -114,7 +114,7 @@ h6 { font-size: 16px; }
 	display: table;
 	content: '';
 }
-.arlo_tm_section{
+.kavin_section{
 	width: 100%;
 	height:auto;
 	clear: both;
@@ -237,11 +237,11 @@ h6 { font-size: 16px; }
     }
 }
 
-.arlo_tm_all_wrap{
+.kavin_all_wrap{
 	width: 100%;
 	position: relative;
 }
-.arlo_tm_mainpart{
+.kavin_mainpart{
 	position: fixed;
 	top: 100px;
 	right: 250px;
@@ -250,7 +250,7 @@ h6 { font-size: 16px; }
 	background-color: #fff;
 	overflow: hidden;
 }
-.arlo_tm_mainpart .mainpart_inner{
+.kavin_mainpart .mainpart_inner{
 	width: 100%;
 	min-height: 100%;
 	position: relative;
@@ -293,7 +293,7 @@ h6 { font-size: 16px; }
 	background-color: #fff;
 	z-index: 15;
 }
-.arlo_tm_section{
+.kavin_section{
 	position: absolute;
     top: 0px;
 	bottom: 0px;
@@ -310,22 +310,22 @@ h6 { font-size: 16px; }
 	-webkit-transition: visibility1s linear, opacity 0s linear;
 	-o-transition: visibility 1s linear, opacity 0s linear;
 }
-.arlo_tm_section.animated {
+.kavin_section.animated {
 	opacity: 1;
 	visibility: visible;
 	z-index: 9;
 }
-.arlo_tm_section.active {
+.kavin_section.active {
 	opacity: 1;
 	visibility: visible;
 	z-index: 10;
 }
-.arlo_tm_section.hidden {
+.kavin_section.hidden {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 9;
 }
-.arlo_tm_section::-webkit-scrollbar{
+.kavin_section::-webkit-scrollbar{
   width: 0px;
 }
 .section_inner{
@@ -334,10 +334,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	02) ARLO MOBILE MENU
+/*	02) KAVIN MOBILE MENU
 /*---------------------------------------------------*/
 
-.arlo_tm_topbar{
+.kavin_topbar{
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -347,7 +347,7 @@ h6 { font-size: 16px; }
 	z-index: 15;
 	display: none;
 }
-.arlo_tm_topbar .topbar_inner{
+.kavin_topbar .topbar_inner{
 	width: 100%;
 	height: 100%;
 	clear: both;
@@ -356,24 +356,24 @@ h6 { font-size: 16px; }
 	justify-content: space-between;
 	padding: 0px 25px;
 }
-.arlo_tm_topbar .logo img{
+.kavin_topbar .logo img{
 	max-width: 100px;
 	max-height: 40px;
 }
-.arlo_tm_topbar .logo[data-type="avatar"] .avatar{display: inline-block;}
-.arlo_tm_topbar .logo[data-type="avatar"] .image{display: none;}
-.arlo_tm_topbar .logo[data-type="avatar"] .text{display: none;}
-.arlo_tm_topbar .logo[data-type="image"] .avatar{display: none;}
-.arlo_tm_topbar .logo[data-type="image"] .image{display: inline-block;}
-.arlo_tm_topbar .logo[data-type="image"] .text{display: none;}
-.arlo_tm_topbar .logo[data-type="text"] .avatar{display: none;}
-.arlo_tm_topbar .logo[data-type="text"] .image{display: none;}
-.arlo_tm_topbar .logo[data-type="text"] .text{display: inline-block;}
-.arlo_tm_topbar .logo .text h3{
+.kavin_topbar .logo[data-type="avatar"] .avatar{display: inline-block;}
+.kavin_topbar .logo[data-type="avatar"] .image{display: none;}
+.kavin_topbar .logo[data-type="avatar"] .text{display: none;}
+.kavin_topbar .logo[data-type="image"] .avatar{display: none;}
+.kavin_topbar .logo[data-type="image"] .image{display: inline-block;}
+.kavin_topbar .logo[data-type="image"] .text{display: none;}
+.kavin_topbar .logo[data-type="text"] .avatar{display: none;}
+.kavin_topbar .logo[data-type="text"] .image{display: none;}
+.kavin_topbar .logo[data-type="text"] .text{display: inline-block;}
+.kavin_topbar .logo .text h3{
 	font-size: 25px;
 	font-family: "Archivo Black";
 }
-.arlo_tm_topbar .avatar{
+.kavin_topbar .avatar{
 	width: 45px;
 	height: 45px;
 	border-radius: 100%;
@@ -382,23 +382,23 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	position: relative;
 }
-.arlo_tm_topbar .hamburger{
+.kavin_topbar .hamburger{
 	padding: 0px;
 }
-.arlo_tm_topbar .hamburger-inner, 
-.arlo_tm_topbar .hamburger-inner:after, 
-.arlo_tm_topbar .hamburger-inner:before{
+.kavin_topbar .hamburger-inner, 
+.kavin_topbar .hamburger-inner:after, 
+.kavin_topbar .hamburger-inner:before{
 	width: 30px;
 	height: 2px;
 }
-.arlo_tm_topbar .trigger{
+.kavin_topbar .trigger{
 	position: relative;
 	top: 5px;
 }
-.arlo_tm_topbar .hamburger-box{
+.kavin_topbar .hamburger-box{
 	width: 30px;
 }
-.arlo_tm_mobile_menu{
+.kavin_mobile_menu{
 	position: fixed;
 	top: 50px;
 	right: -200px;
@@ -413,37 +413,37 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_mobile_menu.opened{
+.kavin_mobile_menu.opened{
 	right: 0px;
 }
-.arlo_tm_mobile_menu .inner{
+.kavin_mobile_menu .inner{
 	position: relative;
 	width: 100%;
 	height: 100%;
 	text-align: right;
 	padding: 70px 20px 20px 20px;
 }
-.arlo_tm_mobile_menu .logo{
+.kavin_mobile_menu .logo{
 	margin-bottom: 50px;
 }
-.arlo_tm_mobile_menu .logo img{
+.kavin_mobile_menu .logo img{
 	max-width: 100px;
 	max-height: 40px;
 }
-.arlo_tm_mobile_menu .logo[data-type="avatar"] .avatar{display: inline-block;}
-.arlo_tm_mobile_menu .logo[data-type="avatar"] .image{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="avatar"] .text{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="image"] .avatar{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="image"] .image{display: inline-block;}
-.arlo_tm_mobile_menu .logo[data-type="image"] .text{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="text"] .avatar{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="text"] .image{display: none;}
-.arlo_tm_mobile_menu .logo[data-type="text"] .text{display: inline-block;}
-.arlo_tm_mobile_menu .logo .text h3{
+.kavin_mobile_menu .logo[data-type="avatar"] .avatar{display: inline-block;}
+.kavin_mobile_menu .logo[data-type="avatar"] .image{display: none;}
+.kavin_mobile_menu .logo[data-type="avatar"] .text{display: none;}
+.kavin_mobile_menu .logo[data-type="image"] .avatar{display: none;}
+.kavin_mobile_menu .logo[data-type="image"] .image{display: inline-block;}
+.kavin_mobile_menu .logo[data-type="image"] .text{display: none;}
+.kavin_mobile_menu .logo[data-type="text"] .avatar{display: none;}
+.kavin_mobile_menu .logo[data-type="text"] .image{display: none;}
+.kavin_mobile_menu .logo[data-type="text"] .text{display: inline-block;}
+.kavin_mobile_menu .logo .text h3{
 	font-size: 25px;
 	font-family: "Archivo Black";
 }
-.arlo_tm_mobile_menu .avatar{
+.kavin_mobile_menu .avatar{
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -452,56 +452,56 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	position: relative;
 }
-.arlo_tm_mobile_menu .menu_list{
+.kavin_mobile_menu .menu_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	margin-bottom: 50px;
 }
-.arlo_tm_mobile_menu .menu_list ul{
+.kavin_mobile_menu .menu_list ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.arlo_tm_mobile_menu .menu_list ul li{
+.kavin_mobile_menu .menu_list ul li{
 	margin: 0px 0px 7px 0px;
 }
-.arlo_tm_mobile_menu .menu_list ul li a{
+.kavin_mobile_menu .menu_list ul li a{
 	text-decoration: none;
 	color: var(--dark-color);
 }
-.arlo_tm_mobile_menu .social{
+.kavin_mobile_menu .social{
 	width: 100%;
 	float: left;
 	margin-bottom: 5px;
 }
-.arlo_tm_mobile_menu .social ul{
+.kavin_mobile_menu .social ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.arlo_tm_mobile_menu .social ul li{
+.kavin_mobile_menu .social ul li{
 	display: inline-block;
 }
-.arlo_tm_mobile_menu .social ul li:last-child{
+.kavin_mobile_menu .social ul li:last-child{
 	margin-right: 0px;
 }
-.arlo_tm_mobile_menu .social ul li a{
+.kavin_mobile_menu .social ul li a{
 	text-decoration: none;
 	color: #333;
 }
-.arlo_tm_mobile_menu .copyright{
+.kavin_mobile_menu .copyright{
 	width: 100%;
 	float: left;
 }
-.arlo_tm_mobile_menu .copyright p{
+.kavin_mobile_menu .copyright p{
 	color: var(--dark-color);
 }
 
 /*---------------------------------------------------*/
-/*	03) ARLO SIDEBAR MENU
+/*	03) KAVIN SIDEBAR MENU
 /*---------------------------------------------------*/
 
-.arlo_tm_sidebar_menu{
+.kavin_sidebar_menu{
 	position: fixed;
 	top: 100px;
 	left: 250px;
@@ -509,7 +509,7 @@ h6 { font-size: 16px; }
 	width: 400px;
 	background-color: #fff;
 }
-.arlo_tm_sidebar_menu .sidebar_inner{
+.kavin_sidebar_menu .sidebar_inner{
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -518,27 +518,27 @@ h6 { font-size: 16px; }
 	flex-direction: column;
 	text-align: center;
 }
-.arlo_tm_sidebar_menu .logo{
+.kavin_sidebar_menu .logo{
 	margin-bottom: 50px;
 }
-.arlo_tm_sidebar_menu .logo img{
+.kavin_sidebar_menu .logo img{
 	max-width: 200px;
 	max-height: 100px;
 }
-.arlo_tm_sidebar_menu .logo[data-type="avatar"] .avatar{display: inline-block;}
-.arlo_tm_sidebar_menu .logo[data-type="avatar"] .image{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="avatar"] .text{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="image"] .avatar{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="image"] .image{display: inline-block;}
-.arlo_tm_sidebar_menu .logo[data-type="image"] .text{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="text"] .avatar{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="text"] .image{display: none;}
-.arlo_tm_sidebar_menu .logo[data-type="text"] .text{display: inline-block;}
-.arlo_tm_sidebar_menu .logo .text h3{
+.kavin_sidebar_menu .logo[data-type="avatar"] .avatar{display: inline-block;}
+.kavin_sidebar_menu .logo[data-type="avatar"] .image{display: none;}
+.kavin_sidebar_menu .logo[data-type="avatar"] .text{display: none;}
+.kavin_sidebar_menu .logo[data-type="image"] .avatar{display: none;}
+.kavin_sidebar_menu .logo[data-type="image"] .image{display: inline-block;}
+.kavin_sidebar_menu .logo[data-type="image"] .text{display: none;}
+.kavin_sidebar_menu .logo[data-type="text"] .avatar{display: none;}
+.kavin_sidebar_menu .logo[data-type="text"] .image{display: none;}
+.kavin_sidebar_menu .logo[data-type="text"] .text{display: inline-block;}
+.kavin_sidebar_menu .logo .text h3{
 	font-size: 40px;
 	font-family: "Archivo Black";
 }
-.arlo_tm_sidebar_menu .avatar{
+.kavin_sidebar_menu .avatar{
 	width: 120px;
 	height: 120px;
 	border-radius: 100%;
@@ -547,10 +547,10 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	position: relative;
 }
-.arlo_tm_sidebar_menu .menu{
+.kavin_sidebar_menu .menu{
 	margin-bottom: 50px;
 }
-.arlo_tm_sidebar_menu .menu ul li a{
+.kavin_sidebar_menu .menu ul li a{
 	color: #5C5990;
 	padding: 2px 0px;
 	display: inline-block;
@@ -561,22 +561,22 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_sidebar_menu .menu ul li a:hover,
-.arlo_tm_sidebar_menu .menu ul li.active a{
+.kavin_sidebar_menu .menu ul li a:hover,
+.kavin_sidebar_menu .menu ul li.active a{
 	color: #8D86E0;
 }
 
-.arlo_tm_sidebar_menu .social{
+.kavin_sidebar_menu .social{
 	width: 100%;
 }
-.arlo_tm_sidebar_menu .social li{
+.kavin_sidebar_menu .social li{
 	display: inline-block;
 	margin-right: 3px;
 }
-.arlo_tm_sidebar_menu .social li:last-child{
+.kavin_sidebar_menu .social li:last-child{
 	margin-right: 0px;
 }
-.arlo_tm_sidebar_menu .social li a{
+.kavin_sidebar_menu .social li a{
 	color: #5C5990;
 	font-size: 19px;
 	
@@ -586,22 +586,22 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_sidebar_menu .social li a:hover{
+.kavin_sidebar_menu .social li a:hover{
 	color: #8D86E0;
 }
 
 /*---------------------------------------------------*/
-/*	04) ARLO HOME
+/*	04) KAVIN HOME
 /*---------------------------------------------------*/
 
-.arlo_tm_home{
+.kavin_home{
 	width: 100%;
 	min-height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;   
 }
-.arlo_tm_home .content {
+.kavin_home .content {
     width: 100%;
     text-align: center;
     display: flex;
@@ -609,13 +609,13 @@ h6 { font-size: 16px; }
     align-items: center;
 }
 
-.arlo_tm_home .content h3 {
+.kavin_home .content h3 {
     font-size: 50px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.arlo_tm_home .animateText {
+.kavin_home .animateText {
     display: flex;
 	color: #8D86E0;
     flex-direction: row;
@@ -624,7 +624,7 @@ h6 { font-size: 16px; }
     flex-wrap: wrap;
 }
 
-.arlo_tm_home .animateText span {
+.kavin_home .animateText span {
     font-size: 18px;
     text-align: center;
     margin: 0 5px;
@@ -632,24 +632,24 @@ h6 { font-size: 16px; }
 }
 
 @media (max-width: 768px) {
-    .arlo_tm_home .content h3 {
+    .kavin_home .content h3 {
         font-size: 35px;
     }
-    .arlo_tm_home .animateText span {
+    .kavin_home .animateText span {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    .arlo_tm_home .content h3 {
+    .kavin_home .content h3 {
         font-size: 28px;
     }
-    .arlo_tm_home .animateText span {
+    .kavin_home .animateText span {
         font-size: 14px;
     }
 }
 
-.arlo_tm_home .avatar{
+.kavin_home .avatar{
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -676,13 +676,13 @@ h6 { font-size: 16px; }
 
 
 /*---------------------------------------------------*/
-/*	05) ARLO ABOUT
+/*	05) KAVIN ABOUT
 /*---------------------------------------------------*/
 
-.arlo_tm_about{
+.kavin_about{
 	width: 100%;
 }
-.arlo_tm_about .biography{
+.kavin_about .biography{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 58px 50px 50px 50px;
@@ -690,49 +690,49 @@ h6 { font-size: 16px; }
 	margin-top: 20px;
 	margin-bottom: 69px;
 }
-.arlo_tm_title{
+.kavin_title{
 	position: absolute;
 	top: -20px;
 }
-.arlo_tm_title h3{
+.kavin_title h3{
 	font-size: 15px;
 	text-transform: uppercase;
 	display: inline-block;
 	background-color: #EDE7F6;
 	padding: 10px 30px 9px 30px;
 }
-.arlo_tm_about .biography .text{
+.kavin_about .biography .text{
 	width: 100%;
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 	padding-bottom: 42px;
 	margin-bottom: 39px;
 }
-.arlo_tm_about .biography .details{
+.kavin_about .biography .details{
 	width: 100%;
 	margin-bottom: 37px;
 }
-.arlo_tm_about .biography .details ul{
+.kavin_about .biography .details ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -20px;
 }
-.arlo_tm_about .biography .details ul li{
+.kavin_about .biography .details ul li{
 	width: 50%;
 	padding-left: 20px;
 	margin-bottom: 5px;
 }
-.arlo_tm_about .biography .details ul li span:first-child{
+.kavin_about .biography .details ul li span:first-child{
 	min-width: 120px;
 	display: inline-block;
 }
-.arlo_tm_about .biography .details ul li a{
+.kavin_about .biography .details ul li a{
 	color: #8D86E0;     /*  #43406B*/
 }
 
-.arlo_tm_button{
+.kavin_button{
 	width: 100%;
 }
-.arlo_tm_button a{
+.kavin_button a{
 	display: inline-block;
 	color: 	 #8D86E0;
 	padding: 4px 30px;
@@ -744,12 +744,12 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_button a .back{
+.kavin_button a .back{
 	position: relative;
 	z-index: 1;
 	display: block;
 }
-.arlo_tm_button a .front{
+.kavin_button a .front{
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -767,10 +767,10 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_button a:hover .front{
+.kavin_button a:hover .front{
 	width: 100%;
 }
-.arlo_tm_button a:before{
+.kavin_button a:before{
 	position: absolute;
 	content: "";
 	top: 0px;
@@ -785,10 +785,10 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_button a:hover:before{
+.kavin_button a:hover:before{
 	width: 100%;
 }
-.arlo_tm_about .skillbox{
+.kavin_about .skillbox{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 65px 50px 50px 50px;
@@ -796,7 +796,7 @@ h6 { font-size: 16px; }
 	margin-top: 20px;
 	margin-bottom: 69px;
 }
-.arlo_tm_about .skillbox:before{
+.kavin_about .skillbox:before{
 	position: absolute;
 	content: "";
 	width: 1px;
@@ -806,28 +806,28 @@ h6 { font-size: 16px; }
 	top: 0px;
 	background-color: #EDE7F6;
 }
-.arlo_tm_about .skillbox .wrapper{
+.kavin_about .skillbox .wrapper{
 	width: 100%;
 	display: flex;
 }
-.arlo_tm_about .skillbox .left{
+.kavin_about .skillbox .left{
 	width: 50%;
 	padding-right: 50px;
 }
-.arlo_tm_about .skillbox .right{
+.kavin_about .skillbox .right{
 	width: 50%;
 	padding-left: 50px;
 	position: relative;
 }
-.arlo_tm_about .skillbox .skills_title{
+.kavin_about .skillbox .skills_title{
 	width: 100%;
 	margin-bottom: 33px;
 }
-.arlo_tm_about .skillbox .skills_title h3{
+.kavin_about .skillbox .skills_title h3{
 	font-size: 15px;
 	text-transform: uppercase;
 }
-.arlo_progress {
+.KAVIN_progress {
     width: 100%;
     height: auto;
     clear: both;
@@ -890,7 +890,7 @@ h6 { font-size: 16px; }
 @-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 @keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 
-.arlo_tm_about .experience{
+.kavin_about .experience{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 64px 50px 41px 50px;
@@ -898,7 +898,7 @@ h6 { font-size: 16px; }
 	margin-top: 20px;
 	margin-bottom: 69px;
 }
-.arlo_tm_about .experience:before{
+.kavin_about .experience:before{
 	position: absolute;
 	content: "";
 	width: 1px;
@@ -908,35 +908,35 @@ h6 { font-size: 16px; }
 	top: 0px;
 	background-color:rgba(109, 69, 189, 0.1);
 }
-.arlo_tm_about .experience .wrapper{
+.kavin_about .experience .wrapper{
 	width: 100%;
 	display: flex;
 }
-.arlo_tm_about .experience .left{
+.kavin_about .experience .left{
 	width: 50%;
 	padding-right: 50px;
 }
-.arlo_tm_about .experience .right{
+.kavin_about .experience .right{
 	width: 50%;
 	padding-left: 50px;
 	position: relative;
 }
-.arlo_tm_about .experience .experience_title{
+.kavin_about .experience .experience_title{
 	width: 100%;
 	margin-bottom: 40px;
 }
-.arlo_tm_about .experience .experience_title h3{
+.kavin_about .experience .experience_title h3{
 	font-size: 15px;
 	text-transform: uppercase;
 }
-.arlo_tm_experience_list{
+.kavin_experience_list{
 	width: 100%;
 }
-.arlo_tm_experience_list li{
+.kavin_experience_list li{
 	width: 100%;
 	margin-bottom: 25px;
 }
-.arlo_tm_experience_list li .list_inner{
+.kavin_experience_list li .list_inner{
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -945,60 +945,60 @@ h6 { font-size: 16px; }
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 	padding-bottom: 21px;
 }
-.arlo_tm_experience_list li:last-child{
+.kavin_experience_list li:last-child{
 	margin-bottom: 0px;
 }
-.arlo_tm_experience_list li:last-child .list_inner{
+.kavin_experience_list li:last-child .list_inner{
 	border-bottom: none;
 	padding-bottom: 0px;
 }
-.arlo_tm_experience_list .subject h3{
+.kavin_experience_list .subject h3{
 	font-size: 15px;
 }
-.arlo_tm_experience_list .subject span{
+.kavin_experience_list .subject span{
 	font-size: 14px;
 }
-.arlo_tm_experience_list .date span{
+.kavin_experience_list .date span{
 	font-size: 14px;
 	display: inline-block;
 	color: #8D86E0;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 4px 15px;
 }
-.arlo_tm_testimonials{
+.kavin_testimonials{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 57px 50px 50px 50px;
 	position: relative;
 	margin-top: 20px;
 }
-.arlo_tm_testimonials .testimonials_inner{
+.kavin_testimonials .testimonials_inner{
 	width: 100%;
 }
-.arlo_tm_testimonials .wrapper{
+.kavin_testimonials .wrapper{
 	width: 100%;
 }
-.arlo_tm_testimonials .quote{
+.kavin_testimonials .quote{
 	width: 100%;
 	margin-bottom: 15px;
 }
-.arlo_tm_testimonials .quote .svg{
+.kavin_testimonials .quote .svg{
 	width: 50px;
 	height: 50px;
 	color: #8D86E0;
 }
-.arlo_tm_testimonials .item{
+.kavin_testimonials .item{
 	width: 100%;
 }
-.arlo_tm_testimonials .text{
+.kavin_testimonials .text{
 	width: 100%;
 	margin-bottom: 27px;
 }
-.arlo_tm_testimonials .details{
+.kavin_testimonials .details{
 	display: flex;
 	align-items: center;
 }
-.arlo_tm_testimonials .avatar{
+.kavin_testimonials .avatar{
 	position: relative;
 	width: 60px;
 	height: 60px;
@@ -1006,7 +1006,7 @@ h6 { font-size: 16px; }
 	top: 50%;
 	overflow: hidden;
 }
-.arlo_tm_testimonials .avatar .image{
+.kavin_testimonials .avatar .image{
 	position: absolute;
 	top: -4px;
 	bottom: -4px;
@@ -1026,32 +1026,32 @@ h6 { font-size: 16px; }
 	
 	transform: scale(1.2) translateZ(0);
 }
-.arlo_tm_testimonials .owl-carousel .owl-item.active .avatar .image{
+.kavin_testimonials .owl-carousel .owl-item.active .avatar .image{
 	opacity: 1;
 	transition: all 1s .3s ease;
 	transform: scale(1) translateZ(0);
 }
-.arlo_tm_testimonials .info{
+.kavin_testimonials .info{
 	padding-left: 15px;
 }
-.arlo_tm_testimonials .info .author{
+.kavin_testimonials .info .author{
 	font-size: 15px;
 	margin-bottom: 7px;
 }
-.arlo_tm_testimonials .info .job{
+.kavin_testimonials .info .job{
 	font-weight: 400;
 	font-size: 14px;
 	color: #8d86e0;
 }
-.arlo_tm_testimonials .info h3{
+.kavin_testimonials .info h3{
 	overflow: hidden;
 	margin: 0px;
 	padding: 0px;
 	line-height: 1;
 	position: relative;
 }
-.arlo_tm_testimonials .info .author span,
-.arlo_tm_testimonials .info .job span{
+.kavin_testimonials .info .author span,
+.kavin_testimonials .info .job span{
 	position: relative;
 	display: block;
 	padding: 2px 0px;
@@ -1064,47 +1064,47 @@ h6 { font-size: 16px; }
 	        transition: all 1s ease;
 }
 
-.arlo_tm_testimonials .owl-carousel .owl-item.active .info .author span{
+.kavin_testimonials .owl-carousel .owl-item.active .info .author span{
 	transform: translateY(0px);
 	transition-delay: 0.3s;
 }
-.arlo_tm_testimonials .owl-carousel .owl-item.active .info .job span{
+.kavin_testimonials .owl-carousel .owl-item.active .info .job span{
 	transform: translateY(0px);
 	transition-delay: 0.6s;
 }
 
 /*---------------------------------------------------*/
-/*	06) ARLO SERVICES
+/*	06) KAVIN SERVICES
 /*---------------------------------------------------*/
 
-.arlo_tm_services{
+.kavin_services{
 	width: 100%;
 }
-.arlo_tm_services .services_list{
+.kavin_services .services_list{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 70px 50px 0px 50px;
 	position: relative;
 	margin-top: 20px;
 }
-.arlo_tm_services .services_list > ul{
+.kavin_services .services_list > ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -50px;
 }
-.arlo_tm_services .services_list > ul > li{
+.kavin_services .services_list > ul > li{
 	width: 50%;
 	padding-left: 50px;
 	margin-bottom: 50px;
 }
-.arlo_tm_services .services_list .list_inner{
+.kavin_services .services_list .list_inner{
 	width: 100%;
 	height: 100%;
 	position: relative;
 	padding: 45px 50px 42px 50px;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 }
-.arlo_tm_services .services_list .list_inner .svg{
+.kavin_services .services_list .list_inner .svg{
 	width: 40px;
 	height: 40px;
 	color: #323056;
@@ -1116,28 +1116,28 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_services .services_list .list_inner:hover .svg{
+.kavin_services .services_list .list_inner:hover .svg{
 	color: #8D86E0;
 }
-.arlo_tm_services .services_list .title{
+.kavin_services .services_list .title{
 	font-size: 15px;
 }
-.arlo_tm_services .services_list .list{
+.kavin_services .services_list .list{
 	width: 100%;
 	border-top: 1px solid rgba(109, 69, 189, 0.1);
 	margin-top: 29px;
 	padding-top: 25px;
 }
-.arlo_tm_services .services_list .list li{
+.kavin_services .services_list .list li{
 	width: 100%;
 	margin-bottom: 5px;
 	position: relative;
 	padding-left: 18px;
 }
-.arlo_tm_services .services_list .list li:last-child{
+.kavin_services .services_list .list li:last-child{
 	margin-bottom: 0px;
 }
-.arlo_tm_services .services_list .list li:before{
+.kavin_services .services_list .list li:before{
 	position: absolute;
 	content: "";
 	width: 6px;
@@ -1150,13 +1150,13 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	07) ARLO PORTFOLIO
+/*	07) KAVIN PORTFOLIO
 /*---------------------------------------------------*/
 
-.arlo_tm_portfolio{
+.kavin_portfolio{
 	width: 100%;
 }
-.arlo_tm_portfolio .portfolio_list{
+.kavin_portfolio .portfolio_list{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 70px 50px 00px 50px;
@@ -1164,23 +1164,23 @@ h6 { font-size: 16px; }
 	margin-top: 20px;
 }
 
-.arlo_tm_portfolio .portfolio_filter{
+.kavin_portfolio .portfolio_filter{
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 	padding-bottom: 7px;
 	display: inline-block;
 	margin-bottom: 40px;
 }
-.arlo_tm_portfolio .portfolio_filter ul li{
+.kavin_portfolio .portfolio_filter ul li{
 	display: inline-block;
 	position: relative;
 	margin-right: 11px;
 	padding-right: 20px;
 }
-.arlo_tm_portfolio .portfolio_filter ul li:last-child{
+.kavin_portfolio .portfolio_filter ul li:last-child{
 	margin-right: 0px;
 	padding-right: 0px;
 }
-.arlo_tm_portfolio .portfolio_filter ul li:after{
+.kavin_portfolio .portfolio_filter ul li:after{
 	position: absolute;
     content: "";
     width: 6px;
@@ -1191,15 +1191,15 @@ h6 { font-size: 16px; }
     transform: translateY(-50%);
     border-radius: 100%;
 }
-.arlo_tm_portfolio .portfolio_filter ul li:last-child:after{
+.kavin_portfolio .portfolio_filter ul li:last-child:after{
 	display: none;
 }
 /* Portfolio Filter Menu Styling */
-.arlo_tm_portfolio .portfolio_filter {
+.kavin_portfolio .portfolio_filter {
     margin-bottom: 50px;
 }
 
-.arlo_tm_portfolio .portfolio_filter ul li a {
+.kavin_portfolio .portfolio_filter ul li a {
     color: #5C5990;
     padding: 2px 0;
     display: inline-block;
@@ -1211,24 +1211,24 @@ h6 { font-size: 16px; }
             transition: all .3s ease;
 }
 
-.arlo_tm_portfolio .portfolio_filter ul li a:hover,
-.arlo_tm_portfolio .portfolio_filter ul li a.current {
+.kavin_portfolio .portfolio_filter ul li a:hover,
+.kavin_portfolio .portfolio_filter ul li a.current {
     color: #8D86E0;
 }
 
 
-.arlo_tm_portfolio .portfolio_item{
+.kavin_portfolio .portfolio_item{
 	margin: 0px 0px 0px -50px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.arlo_tm_portfolio .portfolio_item li{
+.kavin_portfolio .portfolio_item li{
 	margin-bottom: 50px;
 	float: left;
 	width: 50%;
 	padding-left: 50px;
 }
-.arlo_tm_portfolio .portfolio_item li .inner{
+.kavin_portfolio .portfolio_item li .inner{
 	width: 100%;
 	height: 100%;
 	height: auto;
@@ -1237,11 +1237,11 @@ h6 { font-size: 16px; }
 	overflow: hidden;
 	position: relative;
 }
-.arlo_tm_portfolio .portfolio_item li .inner img{
+.kavin_portfolio .portfolio_item li .inner img{
 	opacity: 0;
 	min-width: 100%;
 }
-.arlo_tm_portfolio .portfolio_item li .inner .abs_image{
+.kavin_portfolio .portfolio_item li .inner .abs_image{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1257,10 +1257,10 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_portfolio .portfolio_item li .inner:hover .abs_image{
+.kavin_portfolio .portfolio_item li .inner:hover .abs_image{
 	transform: scale(1.1) translateZ(0);
 }
-.arlo_tm_portfolio_titles {
+.kavin_portfolio_titles {
 	white-space: nowrap;
 	font-size: 15px;
 	padding: 5px 15px;
@@ -1273,11 +1273,11 @@ h6 { font-size: 16px; }
 	width: auto;
 	visibility: hidden;
 }
-.arlo_tm_portfolio_titles.visible {
+.kavin_portfolio_titles.visible {
 	opacity: 1;
 	visibility: visible;
 }
-.arlo_tm_portfolio_titles .work__cat {
+.kavin_portfolio_titles .work__cat {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -1292,37 +1292,37 @@ h6 { font-size: 16px; }
 .entry{position: relative;}
 
 /*---------------------------------------------------*/
-/*	08) ARLO NEWS
+/*	08) KAVIN NEWS
 /*---------------------------------------------------*/
 
-.arlo_tm_news{
+.kavin_news{
 	width: 100%;
 }
-.arlo_tm_news .news_list{
+.kavin_news .news_list{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 70px 50px 50px 50px;
 	position: relative;
 	margin-top: 20px;
 }
-.arlo_tm_news .news_list ul li{
+.kavin_news .news_list ul li{
 	width: 100%;
 	margin-bottom: 50px;
 	padding-bottom: 50px;
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 }
-.arlo_tm_news .news_list ul li:last-child{
+.kavin_news .news_list ul li:last-child{
 	border-bottom: none;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
-.arlo_tm_news .news_list ul li .list_inner{
+.kavin_news .news_list ul li .list_inner{
 	width: 100%;
 	position: relative;
 	display: flex;
 	align-items: center;
 }
-.arlo_tm_news .news_list ul li .date{
+.kavin_news .news_list ul li .date{
 	position: absolute;
 	z-index: 2;
 	top: 20px;
@@ -1332,17 +1332,17 @@ h6 { font-size: 16px; }
 	display: inline-block;
 	padding: 5px 30px;
 }
-.arlo_tm_news .news_list ul li .image{
+.kavin_news .news_list ul li .image{
 	width: 50%;
 	position: relative;
 	overflow: hidden;
 }
-.arlo_tm_news .news_list ul li .image img{
+.kavin_news .news_list ul li .image img{
 	min-width: 100%;
 	opacity: 0;
 	position: relative;
 }
-.arlo_tm_news .news_list ul li .image .main{
+.kavin_news .news_list ul li .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1358,14 +1358,14 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news .news_list ul li .image:hover .main{
+.kavin_news .news_list ul li .image:hover .main{
 	transform: scale(1.1) translateZ(0);
 }
-.arlo_tm_news .news_list ul li .desc{
+.kavin_news .news_list ul li .desc{
 	width: 50%;
 	padding-left: 50px;
 }
-.arlo_tm_full_link{
+.kavin_full_link{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1373,20 +1373,20 @@ h6 { font-size: 16px; }
 	right: 0px;
 	z-index: 5;
 }
-.arlo_tm_news .news_list .meta {
+.kavin_news .news_list .meta {
     display: inline-block;
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 	padding-bottom: 7px;
 	margin-bottom: 25px;
 }
-.arlo_tm_news .news_list .meta span {
+.kavin_news .news_list .meta span {
     position: relative;
     display: inline-block;
     padding-right: 15px;
     margin-right: 10px
 }
 
-.arlo_tm_news .news_list .meta span:after {
+.kavin_news .news_list .meta span:after {
     position: absolute;
     content: "";
     width: 6px;
@@ -1397,14 +1397,14 @@ h6 { font-size: 16px; }
     transform: translateY(-50%);
     border-radius: 100%
 }
-.arlo_tm_news .news_list .meta span:last-child {
+.kavin_news .news_list .meta span:last-child {
     margin: 0;
     padding: 0
 }
-.arlo_tm_news .news_list .meta span:last-child:after {
+.kavin_news .news_list .meta span:last-child:after {
     display: none
 }
-.arlo_tm_news .news_list .meta a{
+.kavin_news .news_list .meta a{
 	color: #8D86E0;
 }
 .line_effect {
@@ -1449,54 +1449,54 @@ h6 { font-size: 16px; }
 .text_hover_effect:hover {
     background-size: 100% 1px
 }
-.arlo_tm_news .news_list .title{
+.kavin_news .news_list .title{
 	width: 100%;
 	margin-bottom: 25px;
 }
-.arlo_tm_news .news_list .title h3{
+.kavin_news .news_list .title h3{
 	font-size: 15px;
 }
-.arlo_tm_news .news_list .title a{
+.kavin_news .news_list .title a{
 	color: #323056;
 }
-.arlo_tm_modalbox.opened .description_wrap .image {
+.kavin_modalbox.opened .description_wrap .image {
     width: 100%;
     text-align: center;
 }
-.arlo_tm_modalbox.opened .description_wrap img {
+.kavin_modalbox.opened .description_wrap img {
     max-width: 100%;
     height: auto;
 }
 
 /*---------------------------------------------------*/
-/*	09) ARLO CONTACT
+/*	09) KAVIN CONTACT
 /*---------------------------------------------------*/
 
-.arlo_tm_contact{
+.kavin_contact{
 	width: 100%;
 }
-.arlo_tm_contact .contact_inner{
+.kavin_contact .contact_inner{
 	width: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 70px 50px 50px 50px;
 	position: relative;
 	margin-top: 20px;
 }
-.arlo_tm_contact .form_wrapper{
+.kavin_contact .form_wrapper{
 	width: 100%;
 }
-.arlo_tm_contact .form_wrapper ul{
+.kavin_contact .form_wrapper ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -20px;
 }
-.arlo_tm_contact .form_wrapper ul li{
+.kavin_contact .form_wrapper ul li{
 	width: 50%;
 	padding-left: 20px;
 	margin-bottom: 20px;
 }
-.arlo_tm_contact .form_wrapper ul li input,
-.arlo_tm_contact .form_wrapper ul li select{
+.kavin_contact .form_wrapper ul li input,
+.kavin_contact .form_wrapper ul li select{
 	width: 100%;
 	height: 50px;
 	padding: 5px 20px;
@@ -1505,13 +1505,13 @@ h6 { font-size: 16px; }
 	font-family: var(--font-syne);
 	font-size: 15px;
 }
-.arlo_tm_contact .form_wrapper ul li input:focus,
-.arlo_tm_contact .form_wrapper ul li select:focus,
-.arlo_tm_contact .form_wrapper textarea:focus,
-.arlo_tm_contact .enter_code input:focus{
+.kavin_contact .form_wrapper ul li input:focus,
+.kavin_contact .form_wrapper ul li select:focus,
+.kavin_contact .form_wrapper textarea:focus,
+.kavin_contact .enter_code input:focus{
 	outline: none;
 }
-.arlo_tm_contact .form_wrapper textarea{
+.kavin_contact .form_wrapper textarea{
 	padding: 20px;
 	height: 120px;
 	background-color: transparent;
@@ -1520,14 +1520,14 @@ h6 { font-size: 16px; }
 	font-family: var(--font-syne);
 	font-size: 15px;
 }
-.arlo_tm_contact #enter_code{
+.kavin_contact #enter_code{
 	width: 100%;
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
 	margin-top: 2px;
 }
-.arlo_tm_contact #enter_code span{
+.kavin_contact #enter_code span{
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -1537,7 +1537,7 @@ h6 { font-size: 16px; }
 	padding: 0px 30px;
 	user-select:none;
 }
-.arlo_tm_contact #enter_code input{
+.kavin_contact #enter_code input{
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -1547,14 +1547,14 @@ h6 { font-size: 16px; }
 	font-family: var(--font-syne);
 	font-size: 15px;
 }
-.arlo_tm_contact input::-webkit-outer-spin-button,
-.arlo_tm_contact input::-webkit-inner-spin-button {
+.kavin_contact input::-webkit-outer-spin-button,
+.kavin_contact input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
 /* Firefox */
-.arlo_tm_contact input[type=number] {
+.kavin_contact input[type=number] {
 -moz-appearance: textfield;
 }
 .error_box{
@@ -1604,7 +1604,7 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	10) ARLO BACKGROUND EFFECTS
+/*	10) KAVIN BACKGROUND EFFECTS
 /*---------------------------------------------------*/
 
 /*Line Effect*/
@@ -1823,61 +1823,61 @@ canvas{
 	margin: 0px;
 }
 
-.arlo_tm_background_effects[data-style="canvas"] .lines{display: none;}
-.arlo_tm_background_effects[data-style="canvas"] .noise{display: none;}
-.arlo_tm_background_effects[data-style="canvas"] .circles_wrapper{display: none;}
-.arlo_tm_background_effects[data-style="lines"] .noise{display: none;}
-.arlo_tm_background_effects[data-style="lines"] .circles_wrapper{display: none;}
-.arlo_tm_background_effects[data-style="lines"] .lines{display: block;}
-.arlo_tm_background_effects[data-style="noise"] .circles_wrapper{display: none;}
-.arlo_tm_background_effects[data-style="noise"] .lines{display: none;}
-.arlo_tm_background_effects[data-style="noise"] .noise{display: block;}
-.arlo_tm_background_effects[data-style="circles"] .lines{display: none;}
-.arlo_tm_background_effects[data-style="circles"] .noise{display: none;}
-.arlo_tm_background_effects[data-style="circles"] .circles_wrapper{display: block;}
+.kavin_background_effects[data-style="canvas"] .lines{display: none;}
+.kavin_background_effects[data-style="canvas"] .noise{display: none;}
+.kavin_background_effects[data-style="canvas"] .circles_wrapper{display: none;}
+.kavin_background_effects[data-style="lines"] .noise{display: none;}
+.kavin_background_effects[data-style="lines"] .circles_wrapper{display: none;}
+.kavin_background_effects[data-style="lines"] .lines{display: block;}
+.kavin_background_effects[data-style="noise"] .circles_wrapper{display: none;}
+.kavin_background_effects[data-style="noise"] .lines{display: none;}
+.kavin_background_effects[data-style="noise"] .noise{display: block;}
+.kavin_background_effects[data-style="circles"] .lines{display: none;}
+.kavin_background_effects[data-style="circles"] .noise{display: none;}
+.kavin_background_effects[data-style="circles"] .circles_wrapper{display: block;}
 
 /*---------------------------------------------------*/
-/*	ARLO INTRO PAGE
+/*	KAVIN INTRO PAGE
 /*---------------------------------------------------*/
 
 body.intro{
 	background-color: #fff;
 }
 
-.arlo_tm_intro{
+.kavin_intro{
 	width: 100%;
 }
-.arlo_tm_intro .hero{
+.kavin_intro .hero{
 	width: 100%;
 	text-align: center;
 	border-bottom: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 130px 20px;
 }
-.arlo_tm_intro .hero img{
+.kavin_intro .hero img{
 	margin-bottom: 20px;
 }
-.arlo_tm_intro .hero span{
+.kavin_intro .hero span{
 	font-size: 20px;
 	display: block;
 }
-.arlo_tm_intro .demos{
+.kavin_intro .demos{
 	width: 100%;
 	max-width: 1100px;
 	margin: 0px auto;
 	margin-bottom: 50px;
 }
-.arlo_tm_intro .demos ul{
+.kavin_intro .demos ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0px 0px 0px -50px;
 }
-.arlo_tm_intro .demos ul li{
+.kavin_intro .demos ul li{
 	margin-bottom: 50px;
 	padding-left: 50px;
 	width: 50%;
 	text-align: center;
 }
-.arlo_tm_intro .demos ul li .list_inner{
+.kavin_intro .demos ul li .list_inner{
 	width: 100%;
 	position: relative;
 	border: 1px solid rgba(109, 69, 189, 0.1);
@@ -1888,13 +1888,13 @@ body.intro{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_intro .demos ul li .list_inner:hover{
+.kavin_intro .demos ul li .list_inner:hover{
 	background-color: #8D86E0;
 }
-.arlo_tm_intro .demos .image{
+.kavin_intro .demos .image{
 	padding: 20px;
 }
-.arlo_tm_intro .demos .details{
+.kavin_intro .demos .details{
 	width: 100%;
 	border-top: 1px solid rgba(109, 69, 189, 0.1);
 	padding: 20px;
@@ -1905,7 +1905,7 @@ body.intro{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_intro .demos .details h3{
+.kavin_intro .demos .details h3{
 	font-size: 15px;
 	text-transform: uppercase;
 	
@@ -1915,10 +1915,10 @@ body.intro{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_intro .demos ul li .list_inner:hover .details{
+.kavin_intro .demos ul li .list_inner:hover .details{
 	background-color: #f8f8f8;
 }
-.arlo_tm_intro .demos .details h3 span{
+.kavin_intro .demos .details h3 span{
 	color: red;
 	font-weight: 700;
 	position: relative;
@@ -1926,122 +1926,122 @@ body.intro{
 	left: 5px;
 	font-size: 13px;
 }
-.arlo_tm_intro .features_wrapper{
+.kavin_intro .features_wrapper{
 	width: 100%;
 	border-top: 1px solid rgba(109, 69, 189, 0.1);
 	margin-bottom: 50px;
 }
-.arlo_tm_intro .features_wrapper .f_inner{
+.kavin_intro .features_wrapper .f_inner{
 	width: 100%;
 	max-width: 1100px;
 	margin: 0px auto;
 }
-.arlo_tm_intro .main_title{
+.kavin_intro .main_title{
 	width: 100%;
 	text-align: center;
 	margin: 100px 20px 50px 20px;
 }
-.arlo_tm_intro .main_title h3{
+.kavin_intro .main_title h3{
 	font-size: 20px;
 	text-transform: uppercase;
 }
-.arlo_tm_intro .features_wrapper ul{
+.kavin_intro .features_wrapper ul{
 	margin: 0px 0px 0px -50px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.arlo_tm_intro .features_wrapper ul li{
+.kavin_intro .features_wrapper ul li{
 	width: 50%;
 	padding-left: 50px;
 	margin-bottom: 50px;
 }
-.arlo_tm_intro .features_wrapper ul li .list_inner{
+.kavin_intro .features_wrapper ul li .list_inner{
 	width: 100%;
 	height: 100%;
 	border: 1px solid rgba(109, 69, 189, 0.1);
 	text-align: center;
 	padding: 50px;
 }
-.arlo_tm_intro .features_wrapper ul li h3{
+.kavin_intro .features_wrapper ul li h3{
 	font-size: 15px;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
-.arlo_tm_intro .features_wrapper ul li .svg{
+.kavin_intro .features_wrapper ul li .svg{
 	width: 40px;
 	height: 40px;
 	margin-bottom: 25px;
 }
-.arlo_tm_intro .features_wrapper ul li a{
+.kavin_intro .features_wrapper ul li a{
 	color: #000;
 }
 
 /*---------------------------------------------------*/
-/*	11) ARLO MEDIA QUERIES (FOR SMALL DEVICES)
+/*	11) KAVIN MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
-	.arlo_tm_home .avatar{width: 110px;height: 110px;margin-bottom: 20px;}
-	.arlo_tm_home .content h3{margin-bottom: 10px;}
-	.arlo_tm_sidebar_menu{width: 300px;left: 80px;top: 50px;bottom: 50px;}
-	.arlo_tm_mainpart{right: 80px;left: 430px;top: 50px;bottom: 50px;}
-	.arlo_tm_sidebar_menu .sidebar_inner{padding: 30px 25px;}
-	.arlo_tm_sidebar_menu .avatar{width: 90px;height: 90px;}
-	.arlo_tm_sidebar_menu .logo{margin-bottom: 32px;}
-	.arlo_tm_sidebar_menu .menu{margin-bottom: 25px;}
-	.arlo_tm_sidebar_menu .copyright{margin-bottom: 10px;}
-	.arlo_tm_sidebar_menu .menu ul li a{padding: 0px;}
+	.kavin_home .avatar{width: 110px;height: 110px;margin-bottom: 20px;}
+	.kavin_home .content h3{margin-bottom: 10px;}
+	.kavin_sidebar_menu{width: 300px;left: 80px;top: 50px;bottom: 50px;}
+	.kavin_mainpart{right: 80px;left: 430px;top: 50px;bottom: 50px;}
+	.kavin_sidebar_menu .sidebar_inner{padding: 30px 25px;}
+	.kavin_sidebar_menu .avatar{width: 90px;height: 90px;}
+	.kavin_sidebar_menu .logo{margin-bottom: 32px;}
+	.kavin_sidebar_menu .menu{margin-bottom: 25px;}
+	.kavin_sidebar_menu .copyright{margin-bottom: 10px;}
+	.kavin_sidebar_menu .menu ul li a{padding: 0px;}
 }
 @media (max-width: 1040px) {
-	.arlo_tm_sidebar_menu{display: none;}
-	.arlo_tm_topbar{display: block;}
-	.arlo_tm_background_effects{display: none;}
-	.arlo_tm_mainpart{top: 0px;bottom: 0px;left: 0px;right: 0px;}
+	.kavin_sidebar_menu{display: none;}
+	.kavin_topbar{display: block;}
+	.kavin_background_effects{display: none;}
+	.kavin_mainpart{top: 0px;bottom: 0px;left: 0px;right: 0px;}
 	.top_border{height: 25px;}
 	.bottom_border{height: 25px;}
 	.left_border{width: 25px;}
 	.right_border{width: 25px;}
-	.arlo_tm_mainpart .mainpart_inner{padding: 25px;}
+	.kavin_mainpart .mainpart_inner{padding: 25px;}
 	.section_inner{padding: 90px 25px 25px 25px;}
-	.arlo_tm_home .content h3{font-size: 35px;margin-bottom: 10px;}
-	.arlo_tm_home .animateText span{font-size: 16px;}
-	.arlo_tm_about .biography .details ul{margin: 0px;}
-	.arlo_tm_about .biography .details ul li{width: 100%;padding-left: 0px;}
-	.arlo_tm_about .biography{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_about .biography .details ul li span:first-child{min-width: auto;padding-right: 5px;}
-	.arlo_tm_about .skillbox{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_about .skillbox .wrapper{flex-direction: column;}
-	.arlo_tm_about .skillbox .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
-	.arlo_tm_about .skillbox .right{width: 100%;padding-left: 0px;}
-	.arlo_tm_about .skillbox:before{display: none;}
-	.arlo_tm_about .experience{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_about .experience .left{padding-right: 0px;width: 100%;margin-bottom: 50px;}
-	.arlo_tm_about .experience .right{padding-left: 0px;width: 100%;}
-	.arlo_tm_about .experience:before{display: none;}
-	.arlo_tm_about .experience .wrapper{flex-direction: column;}
-	.arlo_tm_testimonials{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_services .services_list{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_portfolio .portfolio_list{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_contact .contact_inner{padding-left: 25px;padding-right: 25px;}
-	.arlo_tm_news .news_list{padding-left: 25px;padding-right: 25px;}
+	.kavin_home .content h3{font-size: 35px;margin-bottom: 10px;}
+	.kavin_home .animateText span{font-size: 16px;}
+	.kavin_about .biography .details ul{margin: 0px;}
+	.kavin_about .biography .details ul li{width: 100%;padding-left: 0px;}
+	.kavin_about .biography{padding-left: 25px;padding-right: 25px;}
+	.kavin_about .biography .details ul li span:first-child{min-width: auto;padding-right: 5px;}
+	.kavin_about .skillbox{padding-left: 25px;padding-right: 25px;}
+	.kavin_about .skillbox .wrapper{flex-direction: column;}
+	.kavin_about .skillbox .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
+	.kavin_about .skillbox .right{width: 100%;padding-left: 0px;}
+	.kavin_about .skillbox:before{display: none;}
+	.kavin_about .experience{padding-left: 25px;padding-right: 25px;}
+	.kavin_about .experience .left{padding-right: 0px;width: 100%;margin-bottom: 50px;}
+	.kavin_about .experience .right{padding-left: 0px;width: 100%;}
+	.kavin_about .experience:before{display: none;}
+	.kavin_about .experience .wrapper{flex-direction: column;}
+	.kavin_testimonials{padding-left: 25px;padding-right: 25px;}
+	.kavin_services .services_list{padding-left: 25px;padding-right: 25px;}
+	.kavin_portfolio .portfolio_list{padding-left: 25px;padding-right: 25px;}
+	.kavin_contact .contact_inner{padding-left: 25px;padding-right: 25px;}
+	.kavin_news .news_list{padding-left: 25px;padding-right: 25px;}
 }
 @media (max-width: 768px) {
-	.arlo_tm_services .services_list > ul{margin: 0px;}
-	.arlo_tm_services .services_list > ul > li{width: 100%;padding-left: 0px;margin-bottom: 25px;}
-	.arlo_tm_portfolio .portfolio_item{margin: 0px;}
-	.arlo_tm_portfolio .portfolio_item li{width: 100%;padding-left: 0px;margin-bottom: 25px;}
-	.arlo_tm_portfolio .portfolio_filter{border-bottom: none;}
-	.arlo_tm_portfolio .portfolio_filter ul li:after{display: none;}
-	.arlo_tm_portfolio .portfolio_filter ul li{padding-right: 0px;}
-	.arlo_tm_news .news_list ul li .list_inner{flex-direction: column;align-items: baseline;}
-	.arlo_tm_news .news_list ul li .image{width: 100%;margin-bottom: 30px;}
-	.arlo_tm_news .news_list ul li .desc{width: 100%;padding-left: 0px;}
-	.arlo_tm_news .news_list ul li .date{padding: 2px 10px;top: 10px;left: 10px;}
-	.arlo_tm_contact .form_wrapper ul{margin: 0px;}
-	.arlo_tm_contact .form_wrapper ul li{width: 100%;padding-left: 0px;}
+	.kavin_services .services_list > ul{margin: 0px;}
+	.kavin_services .services_list > ul > li{width: 100%;padding-left: 0px;margin-bottom: 25px;}
+	.kavin_portfolio .portfolio_item{margin: 0px;}
+	.kavin_portfolio .portfolio_item li{width: 100%;padding-left: 0px;margin-bottom: 25px;}
+	.kavin_portfolio .portfolio_filter{border-bottom: none;}
+	.kavin_portfolio .portfolio_filter ul li:after{display: none;}
+	.kavin_portfolio .portfolio_filter ul li{padding-right: 0px;}
+	.kavin_news .news_list ul li .list_inner{flex-direction: column;align-items: baseline;}
+	.kavin_news .news_list ul li .image{width: 100%;margin-bottom: 30px;}
+	.kavin_news .news_list ul li .desc{width: 100%;padding-left: 0px;}
+	.kavin_news .news_list ul li .date{padding: 2px 10px;top: 10px;left: 10px;}
+	.kavin_contact .form_wrapper ul{margin: 0px;}
+	.kavin_contact .form_wrapper ul li{width: 100%;padding-left: 0px;}
 	
-	.arlo_tm_intro .demos ul{margin: 0px;}
-	.arlo_tm_intro .demos ul li{width: 100%;padding-left: 0px;}
-	.arlo_tm_intro .features_wrapper ul{margin: 0px;}
-	.arlo_tm_intro .features_wrapper ul li{width: 100%;padding-left: 0px;}
+	.kavin_intro .demos ul{margin: 0px;}
+	.kavin_intro .demos ul li{width: 100%;padding-left: 0px;}
+	.kavin_intro .features_wrapper ul{margin: 0px;}
+	.kavin_intro .features_wrapper ul li{width: 100%;padding-left: 0px;}
 }
